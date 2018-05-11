@@ -1,0 +1,9 @@
+.labelContPersp {
+  perspective:1000px;
+}
+
+.label3D {
+  transform-style:preserve-3d;
+  backface-visibility:visible;
+  position:relative;
+}
