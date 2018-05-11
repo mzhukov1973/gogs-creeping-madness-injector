@@ -1,5 +1,5 @@
 # "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation
-#### *Gogs creeping madness injector*
+### *...Gogs Creeping Madness Injector...*
 ###### Version: 1.0.0
 ###### License: MIT
 A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
