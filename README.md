@@ -1,7 +1,7 @@
  # "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation
  ##### *Gogs creeping madness injector*
 
-A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service.), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
+A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
 
 This is a 100% harmless script, (as opposed to a hack) written entirely according to relevant [Gogs](https://github.com/gogits/gogs) documentation, namely the [Custom Template](https://gogs.io/docs/features/custome_template) section, where the proper procedure to inject your own custom header and footer into every page of a working [Gogs](https://github.com/gogits/gogs) installation is described.
 
