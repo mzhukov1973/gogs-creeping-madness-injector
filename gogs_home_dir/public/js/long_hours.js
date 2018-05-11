@@ -1,5 +1,5 @@
 /*    ╔════════════════════════════════════════════════════════════════════════════════════════╗    */
-/*    ║      "Long Hours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation      ║    */
+/*    ║      "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation      ║    */
 /*    ║    ────────────────────────────────────────────────────────────────────────────────    ║    */
 /*    ║                                                                                        ║    */
 /*    ╠════════════════════════════════════════════════════════════════════════════════════════╣    */
@@ -72,7 +72,7 @@
 /*    ║     ╰──────────────────────────────────────╯                                           ║    */
 /*    ║                                                                                        ║    */
 /*    ║       The minimum and maximum amount of time (in seconds) that would elapse between    ║    */
-/*    ║     two consequitive transformations of each affected element for all transformations  ║    */
+/*    ║     two consecutive transformations of each affected element for all transformations  ║    */
 /*    ║     after the first one.                                                               ║    */
 /*    ║     ╭──────────────────────────────────────╮                                           ║    */
 /*    ║     │*/ const transfWaitMin = 4;         /*│  Default: 4    (⩾4sec)                    ║    */
@@ -151,8 +151,8 @@ const addMyEvList = () => {
   window.document.addEventListener('mousemove',mousemoveHandler,{'capture':true,'once':false,'passive':true});
   window.myEvList = true;
 }
-/*================================================================================================*/
-//Init and run the injected code:
+/*══════════════════════════════════════════════════════════════════════════════════════════════════*/
+/*Init and run the injected code:*/
 if (!window.myEvList) {
   addMyEvList();
 }
