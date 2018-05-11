@@ -43,8 +43,8 @@
 /*    ║                                                                                        ║    */
 /*    ║       The maximum amount (in em) any affected element would be translated along each   ║    */
 /*    ║     of the three axes, each time its attached timer fires.                             ║    */
-/*    ║       I.e. the element would "transform:translate3D(±0.3ᴱᴹ, ±0.3ᴱᴹ, ±0.3ᴱᴹ)"           ║    */
-/*    ║     using 3 random numbers [-0.3ᴱᴹ; +0.3ᴱᴹ] as the measure of how far to move along    ║    */
+/*    ║       I.e. the element would "transform:translate3D(±0.3em, ±0.3em, ±0.3em)"           ║    */
+/*    ║     using 3 random numbers [-0.3em; +0.3em] as the measure of how far to move along    ║    */
 /*    ║     each of the axes.                                                                  ║    */
 /*    ║     ╭──────────────────────────────────────╮                                           ║    */
 /*    ║     │*/ const transAmpl = 0.3;           /*│  Default: 0.3  (±0.3em)                   ║    */
