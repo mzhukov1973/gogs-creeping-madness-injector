@@ -11,7 +11,7 @@ You can fine-tune it to your tastes (parameters and a short description can be f
 
 Obviously, everyone is different, but I think I've managed to nail down the perfect parameters required for the most pyschedelic effect.. )))
 
-Check out the working [demo](https://testbed2.clous.tilaa.com:7443), look around, click [Explore](https://testbed2.cloud.tilaa.com:7443/explore/repos), look through the test repository and above all don't forget to leave the page alone for 40 seconds.. ) 
+Check out the working [demo](https://testbed2.cloud.tilaa.com:7443), look around, click [Explore](https://testbed2.cloud.tilaa.com:7443/explore/repos), look through the test repository and above all don't forget to leave the page alone for 40 seconds.. ) 
 
 Effect can be observed anywhere in the repository, regardless of wether you are logged in or not.
 
