@@ -9,11 +9,11 @@ It doesn't contaminate namespace (apart from a very few globals), doesn't slow d
 
 You can fine-tune it to your tastes (parameters and a short description can be found at the top of ```long_hours.js``` file), though I sincerely recommend that you at least try it out for a short while with original settings. 
 
-Obviously, everyone is different, but I think I've managed to nail down the perfect parameters required for the most pyschedelic effect.. )))
+Obviously, everyone is different, but I think I've managed to nail down the perfect parameters required for the most psychedelic effect.. )))
 
 Check out the working [demo](https://testbed2.cloud.tilaa.com:7443), look around, click [Explore](https://testbed2.cloud.tilaa.com:7443/explore/repos), look through the test repository and above all don't forget to leave the page alone for 40 seconds.. ) 
 
-Effect can be observed anywhere in the repository, regardless of wether you are logged in or not.
+Effect can be observed anywhere in the repository, regardless of whether you are logged in or not.
 
 Just sit quietly for 40 seconds. )
 
