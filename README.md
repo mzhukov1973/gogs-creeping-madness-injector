@@ -25,7 +25,7 @@ Any UI activity during that period (for now it's only mousemove, but I'll add ot
 
 Once its timer times out, it sets up another listener to capture UI events (again, so far it's only mousemove) so that it can instantly react to any user activity by bringing UI back to its current condition, and starts randomly and veeery slowly rotating (in 3D) and translating (also in 3D) various elements it has found on the page.
 
-Visible changes are miniscule: by default any rotation is limited to &#x00B1;1° around each axis and translation - to &#x00B1;0.3em along each of the three directions, and also it is very-very slow (transitions fire randomly for each element every 4 to 8 seconds and take 4 to 8 seconds to play out), so hopefully user would mistake the suddenly slightly alive UI for his/her failing eyes or assume that they just seeing things it all... 
+Visible changes are miniscule: by default any rotation is limited to **&#x00B1;1°** around each axis and translation to **&#x00B1;0.3em** along each of the three directions, and also it is very-very slow (by default transitions fire randomly for each element every **4** to **8** seconds and take **4** to **8** seconds to play out), so hopefully user would mistake the suddenly slightly alive UI for his/her failing eyes or assume that they are just seeing things... 
 
 If/when any UI action is attempted (i.e. a mouse moves inside [Gogs](https://github.com/gogits/gogs) window), script instantly ceases operation, returns page to the state it has found it in initially and starts a new wait for the next 40 seconds of inactivity.
 
@@ -37,9 +37,9 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
  - A working [Gogs](https://github.com/gogits/gogs) installation. (If you don't have one - try it out! No, really - it's light, feature rich and a pleasure to work with. It's like your own personal private GitHub, only free.)
 
 1. **Installation itself:**
- - Copy ```long_hours.js``` to your [Gogs](https://github.com/gogits/gogs) installation directory tree, namely to public/js subdirectory in [Gogs](https://github.com/gogits/gogs) installations' root. (By default, if it was installed according to [these](https://www.howtoforge.com/tutorial/how-to-install-gogs-go-git-service-on-ubuntu-1604) convenient instructions, it should reside in your home directory, like this: ```/home/<username>/go/src/github.com/gogits/gogs/public/js```.
+ - Copy ```long_hours.js``` to your [Gogs](https://github.com/gogits/gogs) installation directory tree, namely to ```public/js``` subdirectory in [Gogs](https://github.com/gogits/gogs) installations' root. (By default, if it was installed according to [these](https://www.howtoforge.com/tutorial/how-to-install-gogs-go-git-service-on-ubuntu-1604) convenient instructions, it should reside in your home directory, like this: ```/home/<username>/go/src/github.com/gogits/gogs/public/js```.
  - Similarly, copy ```long_hours.css``` to ```<gogs_home_dir>/public/css```.
- - If you've already done some customisations to your [Gogs](https://github.com/gogits/gogs) installation (i.e. if the files ```<gogs_home_dir>/custom/templates/inject/footer.tmpl``` and ```<gogs_home_dir>/custom/templates/inject/head.tmpl``` already exist), then add these lines to each opf them:
+ - If you've already done some customisations to your [Gogs](https://github.com/gogits/gogs) installation (i.e. if the files ```<gogs_home_dir>/custom/templates/inject/footer.tmpl``` and ```<gogs_home_dir>/custom/templates/inject/head.tmpl``` already exist), then add these lines to each of them:
    - to ```head.tmpl```:
 
 ```html
@@ -51,7 +51,7 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
 ```html
         <script src='/js/long_hours.js'></script>
 ```
- - And if you haven't and these files do not yet exist, than create and fill them like this:
+ - And if you haven't and these files do not yet exist, then create and fill them like this:
 
 ```console
         cd <gogs_home_dir>
@@ -67,6 +67,6 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
 ```
 And you are all set! ) 
 
-Now if you or any other user of your [Gogs](https://github.com/gogits/gogs) installation will idle in front of it for longer than for 40 seconds in a row, you may (hopefully) spend some quality time, questioning your eyesight and/or sanity... )
+Now if you or any other user of your [Gogs](https://github.com/gogits/gogs) installation will idle in front of it longer than 40 seconds in a row, you may (hopefully) spend some quality time, questioning your eyesight and/or sanity... )
 
 Enjoy! ))
