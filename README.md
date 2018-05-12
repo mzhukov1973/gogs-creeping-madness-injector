@@ -39,9 +39,9 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
 
 **1.** **Installation itself:**
 
-<ul><li>Copy <code>long_hours.js</code> to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation directory tree, namely to <code>public/js</code> subdirectory in <a href='https://github.com/gogits/gogs'>Gogs</a> installations' root. (By default, if it was installed according to <a href='https://www.howtoforge.com/tutorial/how-to-install-gogs-go-git-service-on-ubuntu-1604'>these</a>) convenient instructions, it should reside in your home directory, like this: <code>/home/<username>/go/src/github.com/gogits/gogs/public/js</code>.</li>
- <li>Similarly, copy <code>long_hours.css</code> to <code><gogs_home_dir>/public/css</code>.</li>
-<li>If you've already done some customisations to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation (i.e. if the files <code><gogs_home_dir>/custom/templates/inject/footer.tmpl</code> and <code><gogs_home_dir>/custom/templates/inject/head.tmpl</code> already exist), then add these lines to each of them:<ul>
+<ul><li>Copy <code>long_hours.js</code> to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation directory tree, namely to <code>public/js</code> subdirectory in <a href='https://github.com/gogits/gogs'>Gogs</a> installations' root. (By default, if it was installed according to <a href='https://www.howtoforge.com/tutorial/how-to-install-gogs-go-git-service-on-ubuntu-1604'>these</a>) convenient instructions, it should reside in your home directory, like this: <code>/home/<b>${username}</b>/go/src/github.com/gogits/gogs/public/js</code>.</li>
+ <li>Similarly, copy <code>long_hours.css</code> to <code><b>${gogs_home_dir}</b>/public/css</code>.</li>
+<li>If you've already done some customisations to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation (i.e. if the files <code><b>${gogs_home_dir}</b>/custom/templates/inject/footer.tmpl</code> and <code><b>${gogs_home_dir}</b>/custom/templates/inject/head.tmpl</code> already exist), then add these lines to each of them:<ul>
  
    <li>to <code>head.tmpl</code>:
 
