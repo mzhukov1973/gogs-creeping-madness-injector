@@ -45,26 +45,30 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
    <li>to ```head.tmpl```:</li>
 
 ```html
-         <link rel='stylesheet' href='/css/long_hours.css'>
+        <link rel='stylesheet' href='/css/long_hours.css'>
 ```
 
   <li>and to ```footer.tmpl```:</li></ul>
 
 ```html
-         <script src='/js/long_hours.js'></script>
+        <script src='/js/long_hours.js'></script>
 ```
+
 </li><li>And if you haven't and these files do not yet exist, then create and fill them like this:</li>
+
 ```bash
     user@server$ cd <gogs_home_dir>
     user@server$ mkdir -p ./custom/templates/inject
     user@server$ echo "<script src='/js/long_hours.js'></script>" > ./custom/templates/inject/footer.tmpl
     user@server$ echo "<link rel='stylesheet' href='/css/long_hours.css'>" > ./custom/templates/inject/head.tmpl
 ```
+
 <li>Restart [Gogs](https://github.com/gogits/gogs):</li></ul>   - 
 
 ```bash
     user@server$ sudo service gogs restart
 ```
+
 And you are all set! ) 
 
 Now if you or any other user of your [Gogs](https://github.com/gogits/gogs) installation will idle in front of it longer than 40 seconds in a row, you may (hopefully) spend some quality time, questioning your eyesight and/or sanity... )
