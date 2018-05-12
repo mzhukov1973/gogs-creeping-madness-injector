@@ -44,37 +44,36 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
 <li>Similarly, copy <code>long_hours.css</code> to <code><b>${gogs_home_dir}</b>/public/css</code>.</li>
 <li>If you've already done some customisations to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation (i.e. if the files <code><b>${gogs_home_dir}</b>/custom/templates/inject/footer.tmpl</code> and <code><b>${gogs_home_dir}</b>/custom/templates/inject/head.tmpl</code> already exist), then add these lines to each of them:
 <ul>
- <li>to <code>head.tmpl</code>:
+<li>to <code>head.tmpl</code>:
 
 ```html
-        <link rel='stylesheet' href='/css/long_hours.css'>
+<link rel='stylesheet' href='/css/long_hours.css'>
 ```
  </li>
 
- <li>and to <code>footer.tmpl</code>:</li>
-</ul>
+ <li>and to <code>footer.tmpl</code>:</li></ul>
 
 ```html
-        <script src='/js/long_hours.js'></script>
+    <script src='/js/long_hours.js'></script>
 ```
 
 </li>usr@srvr$ sudo service gogs restart
 
-<li>And if you haven't and these files do not yet exist, then create and fill them like this:
+ <li>And if you haven't and these files do not yet exist, then create and fill them like this:
 
-```consoleshellbash
+```console
 usr@srvr$ cd <gogs_home_dir>
 usr@srvr$ mkdir -p ./custom/templates/inject
 usr@srvr$ echo "<script src='/js/long_hours.js'></script>" > ./custom/templates/inject/footer.tmpl
 usr@srvr$ echo "<link rel='stylesheet' href='/css/long_hours.css'>" > ./custom/templates/inject/head.tmpl
 ```
  </li>
- <li>Restart <a href='https://github.com/gogits/gogs'>Gogs</a>:</li>
-</ul>
+ <li>Restart <a href='https://github.com/gogits/gogs'>Gogs</a>:
 
 ```console
 usr@srvr$ sudo service gogs restart
 ```
+</li></ul>
 
 And you are all set! ) 
 
