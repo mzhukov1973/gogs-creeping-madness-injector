@@ -43,11 +43,12 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
    - Similarly, copy ```long_hours.css``` to ```<gogs_home_dir>/public/css```.
    - If you've already done some customisations to your [Gogs](https://github.com/gogits/gogs) installation (i.e. if the files ```<gogs_home_dir>/custom/templates/inject/footer.tmpl``` and ```<gogs_home_dir>/custom/templates/inject/head.tmpl``` already exist), then add these lines to each of them:
      - to ```head.tmpl```:
-```html5
+```html
         <link rel='stylesheet' href='/css/long_hours.css'>
 ```
-       - and to ```footer.tmpl```:
-```html5
+     - and to ```footer.tmpl```:
+
+```html
         <script src='/js/long_hours.js'></script>
 ```
      - And if you haven't and these files do not yet exist, then create and fill them like this:
