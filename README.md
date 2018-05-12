@@ -42,7 +42,6 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
    - Copy ```long_hours.js``` to your [Gogs](https://github.com/gogits/gogs) installation directory tree, namely to ```public/js``` subdirectory in [Gogs](https://github.com/gogits/gogs) installations' root. (By default, if it was installed according to [these](https://www.howtoforge.com/tutorial/how-to-install-gogs-go-git-service-on-ubuntu-1604) convenient instructions, it should reside in your home directory, like this: ```/home/<username>/go/src/github.com/gogits/gogs/public/js```.
    - Similarly, copy ```long_hours.css``` to ```<gogs_home_dir>/public/css```.
    - If you've already done some customisations to your [Gogs](https://github.com/gogits/gogs) installation (i.e. if the files ```<gogs_home_dir>/custom/templates/inject/footer.tmpl``` and ```<gogs_home_dir>/custom/templates/inject/head.tmpl``` already exist), then add these lines to each of them:
-
      - to ```head.tmpl```:
 
 ```html
