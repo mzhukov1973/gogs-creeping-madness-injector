@@ -46,22 +46,23 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
 ```html
         <link rel='stylesheet' href='/css/long_hours.css'>
 ```
-     - and to ```footer.tmpl```:
+
+   - and to ```footer.tmpl```:
 
 ```html
         <script src='/js/long_hours.js'></script>
 ```
      - And if you haven't and these files do not yet exist, then create and fill them like this:
-```console
-        cd <gogs_home_dir>
-        mkdir -p ./custom/templates/inject
-        echo "<script src='/js/long_hours.js'></script>" > ./custom/templates/inject/footer.tmpl
-        echo "<link rel='stylesheet' href='/css/long_hours.css'>" > ./custom/templates/inject/head.tmpl
+```bash
+        user@server$ cd <gogs_home_dir>
+        user@server$ mkdir -p ./custom/templates/inject
+        user@server$ echo "<script src='/js/long_hours.js'></script>" > ./custom/templates/inject/footer.tmpl
+        user@server$ echo "<link rel='stylesheet' href='/css/long_hours.css'>" > ./custom/templates/inject/head.tmpl
 ```
    - Restart [Gogs](https://github.com/gogits/gogs):
 
-```console
-        sudo service gogs restart
+```bash
+        user@server$ sudo service gogs restart
 ```
 And you are all set! ) 
 
