@@ -22,13 +22,13 @@ Just sit quietly for 40 seconds. )
 
 Once injected, script scans the current [Gogs](https://github.com/gogits/gogs) page (every page, wherever you go inside [Gogs](https://github.com/gogits/gogs), since script gets injected in the footer of every page) for HTML elements, suitable to its task, sets up a (40 second) timer and waits.
 
-Any UI activity during that period (for now it's only mousemove, but I'll add other events soon enough) resets the timer, so it times out only after 40 solid seconds of user inactivity (hopefully it happens at the point where a weary and possibly somewhat sleepy user stops or slows down working for a few moments to stretch the legs/rub tired eyes/spend a few minutes staring dumbly at the monitor with unseeing eyes (truth be told, this last one is my personal favourite :) )).
+Any UI activity during that period (for now it's only mousemove, but I'll add other events soon enough) resets the timer, so it times out only after **40** solid seconds of user inactivity (hopefully it happens at the point where a weary and possibly somewhat sleepy user stops or slows down working for a few moments to stretch the legs/rub tired eyes/spend a few minutes staring dumbly at the monitor with unseeing eyes (truth be told, this last one is my personal favourite :) )).
 
 Once its timer times out, it sets up another listener to capture UI events (again, so far it's only mousemove) so that it can instantly react to any user activity by bringing UI back to its current condition, and starts randomly and veeery slowly rotating (in 3D) and translating (also in 3D) various elements it has found on the page.
 
 Visible changes are miniscule: by default any rotation is limited to **&#x00B1;1°** around each axis and translation to **&#x00B1;0.3em** along each of the three directions, and also it is very-very slow (by default transitions fire randomly for each element every **4** to **8** seconds and take **4** to **8** seconds to play out), so hopefully user would mistake the suddenly slightly alive UI for his/her failing eyes or assume that they are just seeing things... 
 
-If/when any UI action is attempted (i.e. a mouse moves inside [Gogs](https://github.com/gogits/gogs) window), script instantly ceases operation, returns page to the state it has found it in initially and starts a new wait for the next 40 seconds of inactivity.
+If/when any UI action is attempted (i.e. a mouse moves inside [Gogs](https://github.com/gogits/gogs) window), script instantly ceases operation, returns page to the state it has found it in initially and starts a new wait for the next **40** seconds of inactivity.
 
 Hopefully, all this will produce a few more smiles for this dreary old world.... )
 
