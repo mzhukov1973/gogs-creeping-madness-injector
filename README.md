@@ -1,6 +1,6 @@
 # "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation
 ### *...Gogs Creeping Madness Injector...*
-###### Version: 1.0.0
+###### Version: 1.0.1
 ###### License: MIT
 A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
 
@@ -18,7 +18,8 @@ Effect can be observed anywhere in the repository, regardless of whether you are
 
 Just sit quietly for 40 seconds. )
 
-### So, the gist, what does the script do:
+<br>
+#### So, the gist, what does the script do:
 
 Once injected, script scans the current [Gogs](https://github.com/gogits/gogs) page (every page, wherever you go inside [Gogs](https://github.com/gogits/gogs), since script gets injected in the footer of every page) for HTML elements, suitable to its task, sets up a (40 second) timer and waits.
 
@@ -32,7 +33,8 @@ If/when any UI action is attempted (i.e. a mouse moves inside [Gogs](https://git
 
 Hopefully, all this will produce a few more smiles for this dreary old world.... )
 
-### Installation:
+<br>
+#### Installation:
 
 **0.** **Pre-requisites:**
  - A working [Gogs](https://github.com/gogits/gogs) installation. (If you don't have one - try it out! No, really - it's light, feature rich and a pleasure to work with. It's like your own personal private GitHub, only free.)
@@ -81,3 +83,35 @@ And you are all set! )
 Now if you or any other user of your [Gogs](https://github.com/gogits/gogs) installation will idle in front of it longer than 40 seconds in a row, you may (hopefully) spend some quality time, questioning your eyesight and/or sanity... )
 
 Enjoy! ))
+
+<br>
+#### RoadMap:
+1.0.0 - Initial release: works, doesn't break anything, is configurable via parameters, set inside its main .js file.
+1.1.0 - Addition of a proper settings page (at users' ```.../settings```)
+1.2.0 - Allow the creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
+1.3.0 - Add settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```.../settngs``` page.
+1.4.0 - Add image manipulation as a UI mutation option (CSS filters, etc).
+1.5.0 - Add performance penalty assesser, to be run once upon first injection, add setting to make some of the configured mutations conditional on users' perforance hit being below set threshold.
+
+#### ChangeLog:
+
+**1.0.0:**
+- Initial release
+
+**1.0.1:**
+- Cleaned up namespace, pushed all parameters and relevant variables into one global object (```lHGlobObj```).
+
+#### ToDo:
+- Add more UI events support to user activity triggers:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseover```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mousein```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseout```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseenter```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseleave```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```contextmenu```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```onkeypress```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```onchange```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ...
+- Add a placeholder settings page to users' ```.../settings```.
+- Mark its settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
+- Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
