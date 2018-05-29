@@ -19,6 +19,7 @@ Effect can be observed anywhere in the repository, regardless of whether you are
 Just sit quietly for 40 seconds. )
 
 <br>
+
 #### So, the gist, what does the script do:
 
 Once injected, script scans the current [Gogs](https://github.com/gogits/gogs) page (every page, wherever you go inside [Gogs](https://github.com/gogits/gogs), since script gets injected in the footer of every page) for HTML elements, suitable to its task, sets up a (40 second) timer and waits.
@@ -34,6 +35,7 @@ If/when any UI action is attempted (i.e. a mouse moves inside [Gogs](https://git
 Hopefully, all this will produce a few more smiles for this dreary old world.... )
 
 <br>
+
 #### Installation:
 
 **0.** **Pre-requisites:**
@@ -85,6 +87,7 @@ Now if you or any other user of your [Gogs](https://github.com/gogits/gogs) inst
 Enjoy! ))
 
 <br>
+
 #### RoadMap:
 1.0.0 - Initial release: works, doesn't break anything, is configurable via parameters, set inside its main .js file.
 1.1.0 - Proper settings page (at ```user/settings```)
