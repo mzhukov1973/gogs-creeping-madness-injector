@@ -1,6 +1,6 @@
 # "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation
 ### *...Gogs Creeping Madness Injector...*
-###### Version: 1.0.2
+###### Version: 1.0.3
 ###### License: MIT
 A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
 
@@ -110,10 +110,13 @@ Enjoy! ))
 
 **1.0.2:**
 - Added more UI events to trigger user activity detection (```focus```, ```blur```, ```reset```, ```submit```, ```compositionstart```, ```compositioupdate```, ```compositionend```, ```resize```, ```scroll```, ```fullscreenchange```, ```cut```, ```copy```, ```paste```, ```keydown```, ```keypress```, ```keyup```, ```mousedown```, ```mouseup```, ```mouseenter```, ```mousemove```, ```mouseover```, ```auxclick```, ```click```, ```contextmenu```, ```wheel```, ```mouseleave```, ```mouseout```, ```select```, ```input```, ```valueChange```, ```RadioStateChange```, ```CheckBoxStateChange```)
-- Added a placeholder settings page to ```/user/settings```.
+- Added a placeholder settings page to ```/user/settings``` ([Here](https://testbed2.cloud.tilaa.com:7443/user/settings), at the [demo](https://testbed2.cloud.tilaa.com:7443) installation.).
 - Cleaned up the global object definition, moved its initialisation into constructor
 - Marked settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
 - Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
+
+**1.0.3:**
+- 
 
 #### ToDo:
 - Add a quick-settings menu drop-up into the standard Gogs footer.
