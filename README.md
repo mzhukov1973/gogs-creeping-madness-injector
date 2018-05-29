@@ -1,6 +1,6 @@
 # "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation
 ### *...Gogs Creeping Madness Injector...*
-###### Version: 1.0.1
+###### Version: 1.0.2
 ###### License: MIT
 A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
 
@@ -87,31 +87,27 @@ Enjoy! ))
 <br>
 #### RoadMap:
 1.0.0 - Initial release: works, doesn't break anything, is configurable via parameters, set inside its main .js file.
-1.1.0 - Addition of a proper settings page (at users' ```.../settings```)
-1.2.0 - Allow the creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
-1.3.0 - Add settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```.../settngs``` page.
-1.4.0 - Add image manipulation as a UI mutation option (CSS filters, etc).
-1.5.0 - Add performance penalty assesser, to be run once upon first injection, add setting to make some of the configured mutations conditional on users' perforance hit being below set threshold.
+1.1.0 - Proper settings page (at ```user/settings```)
+1.2.0 - Allow creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
+1.3.0 - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```user/settngs``` page.
+1.4.0 - Image manipulation as a UI mutation option (CSS filters, etc).
+1.5.0 - Performance penalty assesser, to be run once upon first injection, add setting to make some of the configured mutations conditional on users' perforance hit being below set threshold.
 
 #### ChangeLog:
-
 **1.0.0:**
 - Initial release
 
 **1.0.1:**
 - Cleaned up namespace, pushed all parameters and relevant variables into one global object (```lHGlobObj```).
 
+**1.0.2:**
+- Added more UI events to trigger user activity detection (```focus```, ```blur```, ```reset```, ```submit```, ```compositionstart```, ```compositioupdate```, ```compositionend```, ```resize```, ```scroll```, ```fullscreenchange```, ```cut```, ```copy```, ```paste```, ```keydown```, ```keypress```, ```keyup```, ```mousedown```, ```mouseup```, ```mouseenter```, ```mousemove```, ```mouseover```, ```auxclick```, ```click```, ```contextmenu```, ```wheel```, ```mouseleave```, ```mouseout```, ```select```, ```input```, ```valueChange```, ```RadioStateChange```, ```CheckBoxStateChange```)
+- Added a placeholder settings page to ```/user/settings```.
+- Cleaned up the global object definition, moved its initialisation into constructor
+- Marked settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
+
 #### ToDo:
-- Add more UI events support to user activity triggers:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseover```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mousein```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseout```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseenter```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```mouseleave```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```contextmenu```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```onkeypress```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ```onchange```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ...
-- Add a placeholder settings page to users' ```.../settings```.
-- Mark its settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
+- Fix menu styles change semantics at the modified ```user/settings``` page for the injected content.
+- Add a quick-settings menu drop-up into the standard Gogs footer.
+- Add general enable/disable setting, controlling if LongHours is to run at all.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.

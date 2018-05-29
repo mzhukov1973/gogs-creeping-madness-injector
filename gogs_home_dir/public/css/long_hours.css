@@ -10,30 +10,20 @@
 
 .longHoursUserSettingsMenuItemImg {
   position:absolute;
-  height:75%;
-  right:55%;
+  height:1em;
+  right:0.2em;
+  bottom:calc(10% + 0.2em);
   margin:0;
-  bottom:25%;
-  max-width:0 !important;
   z-index:100;
-  opacity:0;
-  filter:saturate(0%);
-  transition:max-width 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out, filter 0.75s ease-in-out 0.4s;
-}
-.longHoursUserSettingsMenuItemImgAct {
-  filter:saturate(100%);
-  height:75% !important;
-  bottom:25%  !important;
   opacity:1;
-  right:0.2rem;
-  max-width:50% !important;
+  filter:saturate(0%);
+  border:1px solid rgba(0,0,0,0);
+  transition:box-shadow 0.2s ease-in-out, right 0.2s ease-in-out, bottom 0.2s ease-in-out, filter 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
-/*filter:saturate(100%) !important; */
-/*filter:saturate(25%) !important;*/
-@keyframes longHoursImg {
-    0% {max-width:60% !important;}
-  100% {max-width:40% !important; }
+a.active .longHoursUserSettingsMenuItemImg {
+  right:0.2em;
+  bottom:calc(10% + 0.2em);
+  filter:saturate(100%) !important;
+  border:1px solid rgba(0,0,0,0.25);
 }
-
-.longHoursUserSettingsMenuItemImgAni { animation: longHoursImg 2s linear 0s infinite alternate; }
