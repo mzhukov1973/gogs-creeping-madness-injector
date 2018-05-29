@@ -113,9 +113,9 @@ Enjoy! ))
 - Added a placeholder settings page to ```/user/settings```.
 - Cleaned up the global object definition, moved its initialisation into constructor
 - Marked settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
+- Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
 
 #### ToDo:
-- Fix menu styles change semantics at the modified ```user/settings``` page for the injected content.
 - Add a quick-settings menu drop-up into the standard Gogs footer.
 - Add general enable/disable setting, controlling if LongHours is to run at all.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
