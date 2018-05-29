@@ -89,12 +89,17 @@ Enjoy! ))
 <br>
 
 #### RoadMap:
-1.0.0 - Initial release: works, doesn't break anything, is configurable via parameters, set inside its main .js file.
-1.1.0 - Proper settings page (at ```user/settings```)
-1.2.0 - Allow creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
-1.3.0 - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```user/settngs``` page.
-1.4.0 - Image manipulation as a UI mutation option (CSS filters, etc).
-1.5.0 - Performance penalty assesser, to be run once upon first injection, add setting to make some of the configured mutations conditional on users' perforance hit being below set threshold.
+**1.0.0** - Initial release: works, doesn't break anything, is configurable via parameters, set inside its main .js file.
+
+**1.1.0** - Proper settings page (at ```user/settings```)
+
+**1.2.0** - Allow creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
+
+**1.3.0** - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```user/settngs``` page.
+
+**1.4.0** - Image manipulation as a UI mutation option (CSS filters, etc).
+
+**1.5.0** - Performance penalty assesser, to be run once upon first injection, add setting to make some of the configured mutations conditional on users' perforance hit being below set threshold.
 
 #### ChangeLog:
 **1.0.0:**
