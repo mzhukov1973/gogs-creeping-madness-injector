@@ -110,7 +110,7 @@ Enjoy! ))
 
 **1.0.2:**
 - Added more UI events to trigger user activity detection (```focus```, ```blur```, ```reset```, ```submit```, ```compositionstart```, ```compositioupdate```, ```compositionend```, ```resize```, ```scroll```, ```fullscreenchange```, ```cut```, ```copy```, ```paste```, ```keydown```, ```keypress```, ```keyup```, ```mousedown```, ```mouseup```, ```mouseenter```, ```mousemove```, ```mouseover```, ```auxclick```, ```click```, ```contextmenu```, ```wheel```, ```mouseleave```, ```mouseout```, ```select```, ```input```, ```valueChange```, ```RadioStateChange```, ```CheckBoxStateChange```)
-- Added a placeholder settings page to ```/user/settings``` ([Here](https://testbed2.cloud.tilaa.com:7443/user/settings), at the [demo](https://testbed2.cloud.tilaa.com:7443) installation.).
+- Added a placeholder settings page to ```/user/settings``` ([here](https://testbed2.cloud.tilaa.com:7443/user/settings), at the [demo](https://testbed2.cloud.tilaa.com:7443) installation).
 - Cleaned up the global object definition, moved its initialisation into constructor
 - Marked settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
 - Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
