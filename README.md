@@ -122,6 +122,6 @@ Enjoy! ))
 
 #### ToDo:
 - Add a quick-settings menu drop-up into the standard Gogs footer.
-- Add general enable/disable setting, controlling if LongHours is to run at all.
 - Fill the settings page itself with properly named and annotated (even if yet unconnected) controls to set mod's parameters. Use either exactly the elements found in other settings pages or use Semantic (for now use version 2.3.1, later - guess it from the active Gogs installation itself).
+- Add general enable/disable setting, controlling if **LongHours** is to run at all and properly connect it - should be completely functional.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
