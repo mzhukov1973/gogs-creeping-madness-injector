@@ -94,6 +94,7 @@
   let LongHoursGlobObj = function() {
 
     this.userParams = {
+      modEnabled: true,
       rotAmpl: 1,
       transAmpl: 0.3,
       transitMin: 4,
@@ -138,15 +139,83 @@
       mnObj:              undefined,
       myMutationObserver: undefined,
       dfNav:              {
-        contInnerHTML:   '....LongHours settings go here....'
+        contInnerHTML:
+          '<h4 class=\'ui top attached header\'>'+
+          '  LongHours UI mod settings'+
+          '  <div class=\'ui right\'>'+
+          '   <div name=\'lHUIMod_enabled\' class=\'ui toggle checkbox\'>'+
+          '    <input type=\'checkbox\'>'+
+          '    <label>Enable/Disable</label>'+
+          '   </div>'+
+          '  </div>'+
+          '</h4>'+
+          '<div class=\'ui attached segment\'>'+
+          ' <div class=\'ui key list\'>'+
+          '  <div class=\'item\' style=\'transition: all 0s ease 0s; transform: none;\'>'+
+          '   This is a list of SSH keys associated with your account. As these keys allow anyone using them to gain access to your repositories, it is highly important that you make sure you recognize them.'+
+          '  </div>'+
+          ' </div>'+
+          '</div>'
+/*
+<div class="ui cube shape">
+  <div class="sides">
+    <div class="side">
+      <div class="content">
+        <div class="center">
+          1
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="content">
+        <div class="center">
+          2
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="content">
+        <div class="center">
+          3
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="content">
+        <div class="center">
+          4
+        </div>
+      </div>
+    </div>
+    <div class="side active">
+      <div class="content">
+        <div class="center">
+          5
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="content">
+        <div class="center">
+          6
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ui text shape">
+     <div class="sides">
+         <div class="ui header side active">Did you know? This side starts visible.</div>
+    <div class="ui header side">Help, its another side!</div>
+    <div class="ui header side">This is the last side</div>
+  </div>
+</div>
 
 
 
-
-
-
-
-
+*/
       }
     }
 
@@ -219,7 +288,6 @@
           Object.values(document.querySelectorAll('a.active.item')).forEach(
             el => {
               if (el.style.backgroundColor == dfMnObj.actBg) {el.style.backgroundColor = dfMnObj.inactBg}
-console.log(el.style.backgroundColor);
               el.classList.remove('active')
             }
           )

@@ -92,11 +92,11 @@ Enjoy! ))
 #### RoadMap:
 **1.0.0** - Initial release: works, doesn't break anything, is configurable via parameters, set inside its main .js file.
 
-**1.1.0** - Proper settings page (at ```user/settings```)
+**1.1.0** - Proper settings page (at ```.../user/settings```)
 
 **1.2.0** - Allow creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
 
-**1.3.0** - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```user/settngs``` page. Allow storing some of the mod's settings inside a repo (a-la *GPG mod*), owned by user or elsewhere in the system while staying 100% client-side (i.e. avoiding adding/changing any backend functionality, thus keeping this addon an addon).
+**1.3.0** - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```.../user/settngs``` page. Allow storing some of the mod's settings inside a repo (a-la *GPG mod*), owned by user or elsewhere in the system while staying 100% client-side (i.e. avoiding adding/changing any backend functionality, thus keeping this addon an addon).
 
 **1.4.0** - Image manipulation as a UI mutation option (CSS filters, etc).
 
@@ -111,10 +111,10 @@ Enjoy! ))
 
 **1.0.2:**
 - Added more UI events to trigger user activity detection (```focus```, ```blur```, ```reset```, ```submit```, ```compositionstart```, ```compositioupdate```, ```compositionend```, ```resize```, ```scroll```, ```fullscreenchange```, ```cut```, ```copy```, ```paste```, ```keydown```, ```keypress```, ```keyup```, ```mousedown```, ```mouseup```, ```mouseenter```, ```mousemove```, ```mouseover```, ```auxclick```, ```click```, ```contextmenu```, ```wheel```, ```mouseleave```, ```mouseout```, ```select```, ```input```, ```valueChange```, ```RadioStateChange```, ```CheckBoxStateChange```)
-- Added a placeholder settings page to ```/user/settings``` ([here](https://testbed2.cloud.tilaa.com:7443/user/settings), at the [demo](https://testbed2.cloud.tilaa.com:7443) installation).
+- Added a placeholder settings page to ```.../user/settings``` ([here](https://testbed2.cloud.tilaa.com:7443/user/settings), at the [demo](https://testbed2.cloud.tilaa.com:7443) installation).
 - Cleaned up the global object definition, moved its initialisation into constructor
 - Marked settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
-- Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
+- Fixed menu styles change semantics at the modified ```.../user/settings``` page for the injected content.
 
 *1.0.3(currently uncommitted):*
 - Fixed the [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected. It [works](https://testbed2.cloud.tilaa.com:7443/user/settings/ssh).
@@ -123,5 +123,7 @@ Enjoy! ))
 #### [ToDo](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/2):
 - Add a quick-settings menu drop-up into the standard [Gogs](https://github.com/gogits/gogs) footer.
 - Fill the settings page itself with properly named and annotated (even if yet unconnected) controls to set mod's parameters. Use either exactly the elements found in other settings pages or use [Semantic](https://semantic-ui.com) (for now use version 2.3.1, later - guess it from the active [Gogs](https://github.com/gogits/gogs) installation itself).
-- Add general enable/disable setting, controlling if **LongHours** is to run at all and properly connect it - should be completely functional.
+- Add a general enable/disable control to the `.../user/settings` page, to control if **LongHours** is to run at all upon injection and properly connect it to the data - it should be completely functional.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
+- In order to avoid depending on any external framework or library as well as for general lightness of code implement two-way coupling between settings values stored in object' sproperties and controls for setting them, found on `.../user/settings` page. Do so, by creating a Proxy for the object, with handler monitoring `.set(...)` calls and informing all concerned parties of any changes via custom events.
+
