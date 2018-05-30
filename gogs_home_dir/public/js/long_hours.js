@@ -141,58 +141,6 @@
         contInnerHTML:   '....LongHours settings go here....'
 
 
-		<h4 class="ui top attached header">
-		    LongHours UI mod settings
-		    <div class="ui right">
-			<div class="ui blue tiny show-panel button" data-panel="#add-ssh-key-panel" style="transition: all 0s ease 0s; transform: none;">Add Key</div>
-		    </div>
-		</h4>
-
-		<div class="ui attached segment">
-//All goes in here
-		    <div class="ui key list">
-			<div class="item" style="transition: all 0s ease 0s; transform: none;">
-			    This is a list of SSH keys associated with your account. As these keys allow anyone using them to gain access to your repositories, it is highly important that you make sure you recognize them.
-			</div>
-			
-		    </div>
-		</div>
-
-		<br>
-
-		<p><strong>Don't know how?</strong> Check out GitHub's guide to <a href="https://help.github.com/articles/generating-ssh-keys" rel="nofollow">create your own SSH keys</a> or solve <a href="https://help.github.com/ssh-issues/" rel="nofollow">common problems</a> you might encounter using SSH.</p>
-
-		<div class="hide" id="add-ssh-key-panel">
-		    <h4 class="ui top attached header">
-			Add SSH Key
-		    </h4>
-		    <div class="ui attached segment">
-			<form class="ui form" action="/user/settings/ssh" method="post">
-			    <input type="hidden" name="_csrf" value="13Z4Lm2_ERpIg2_DUcKxIQ_gpPE6MTUyNzYzNTQ0ODIzODgyMTAwNQ==">
-			    <div class="field ">
-				<label for="title">Key Name</label>
-				<input id="title" name="title" value="" autofocus="" required="">
-			    </div>
-			    <div class="field ">
-				<label for="content">Content</label>
-				<textarea id="content" name="content" required=""></textarea>
-			    </div>
-			    <button class="ui green button" style="transition: all 0s ease 0s; transform: none;">
-				Add Key
-			    </button>
-			</form>
-		    </div>
-		</div>
-
-
-
-
-
-
-
-
-
-
 
 
 
