@@ -6,9 +6,9 @@ A script, to be injected into [Gogs](https://github.com/gogits/gogs) installatio
 
 This is a 100% harmless script, (as opposed to a hack) written entirely according to relevant [Gogs](https://github.com/gogits/gogs) documentation, namely the [Custom Template](https://gogs.io/docs/features/custome_template) section, where the proper procedure to inject your own custom header and footer into every page of a working [Gogs](https://github.com/gogits/gogs) installation is described.
 
-It doesn't contaminate namespace (apart from a very few globals), doesn't slow down normal work process (it kicks in after a set period of user inactivity, by default - after 40 seconds), installation is trivial (you just copy two files and create or modify another two), all resulting changes are non-breaking and so far no adverse effects on users' work have been detected.
+It doesn't contaminate namespace (apart from a very few globals), doesn't slow down normal work process (it kicks in after a set period of user inactivity, by default - after 40 seconds), installation is trivial (you just copy three files and create or modify another two), all resulting changes are non-breaking and so far no adverse effects on users' work have been detected.
 
-You can fine-tune it to your tastes (parameters and a short description can be found at the top of ```long_hours.js``` file), though I sincerely recommend that you at least try it out for a short while with original settings. 
+You can fine-tune it to your tastes (parameters and a short description can be found at the top of ```long_hours.js``` file), though I sincerely recommend that you at least try it out for a short while with original settings.
 
 Obviously, everyone is different, but I think I've managed to nail down the perfect parameters required for the most psychedelic effect.. )))
 
@@ -45,8 +45,9 @@ Hopefully, all this will produce a few more smiles for this dreary old world....
 
 <ul>
  <li>Copy <code>long_hours.js</code> to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation directory tree, namely to <code>public/js</code> subdirectory in <a href='https://github.com/gogits/gogs'>Gogs</a> installations' root. (By default, if it was installed according to <a href='https://www.howtoforge.com/tutorial/how-to-install-gogs-go-git-service-on-ubuntu-1604'>these</a>) convenient instructions, it should reside in your home directory, like this: <code>/home/<b>${username}</b>/go/src/github.com/gogits/gogs/public/js</code>.</li>
-<li>Similarly, copy <code>long_hours.css</code> to <code><b>${gogs_home_dir}</b>/public/css</code>.</li>
-<li>If you've already done some customisations to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation (i.e. if the files <code><b>${gogs_home_dir}</b>/custom/templates/inject/footer.tmpl</code> and <code><b>${gogs_home_dir}</b>/custom/templates/inject/head.tmpl</code> already exist), then add these lines to each of them:
+ <li>Similarly, copy <code>long_hours.css</code> to <code><b>${gogs_home_dir}</b>/public/css</code>.</li>
+ <li>Copy <code>javascript.svg</code> to <code><b>${gogs_home_dir}</b>/public/img</code>.</li>
+ <li>If you've already done some customisations to your <a href='https://github.com/gogits/gogs'>Gogs</a> installation (i.e. if the files <code><b>${gogs_home_dir}</b>/custom/templates/inject/footer.tmpl</code> and <code><b>${gogs_home_dir}</b>/custom/templates/inject/head.tmpl</code> already exist), then add these lines to each of them:
 <ul>
 <li>to <code>head.tmpl</code>:
 
@@ -117,6 +118,7 @@ Enjoy! ))
 
 *1.0.3(currently uncommitted):*
 - Fixed the [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected. It [works](https://testbed2.cloud.tilaa.com:7443/user/settings/ssh).
+- Included javascript.svg logo icon with the mod installation set, amended installation instructions accordingly.
 
 #### ToDo:
 - Add a quick-settings menu drop-up into the standard Gogs footer.
