@@ -116,7 +116,7 @@ Enjoy! ))
 - Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
 
 #### ToDo:
-- Fix weird [issue](#1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected.
+- Fix weird [issue](#1) #1 with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected.
 - Add a quick-settings menu drop-up into the standard Gogs footer.
 - Add general enable/disable setting, controlling if LongHours is to run at all.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
