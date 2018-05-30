@@ -96,7 +96,7 @@ Enjoy! ))
 
 **1.2.0** - Allow creation of separate timer functions (with the same structure, but different parameters) and assigning them to user-definet selectors.
 
-**1.3.0** - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```user/settngs``` page.
+**1.3.0** - Settings presets (include several presets as an example, along with the default one), selectable (and editable, and definable) by user via their ```user/settngs``` page. Allow storing some of the mod's settings inside a repo (a-la *GPG mod*), owned by user or elsewhere in the system while staying 100% client-side (i.e. avoiding adding/changing any backend functionality, thus keeping this addon an addon).
 
 **1.4.0** - Image manipulation as a UI mutation option (CSS filters, etc).
 
@@ -120,8 +120,8 @@ Enjoy! ))
 - Fixed the [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected. It [works](https://testbed2.cloud.tilaa.com:7443/user/settings/ssh).
 - Included javascript.svg logo icon with the mod installation set, amended installation instructions accordingly.
 
-#### ToDo:
-- Add a quick-settings menu drop-up into the standard Gogs footer.
-- Fill the settings page itself with properly named and annotated (even if yet unconnected) controls to set mod's parameters. Use either exactly the elements found in other settings pages or use [Semantic](https://semantic-ui.com/) (for now use version 2.3.1, later - guess it from the active Gogs installation itself).
+#### [ToDo](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/2):
+- Add a quick-settings menu drop-up into the standard [Gogs](https://github.com/gogits/gogs) footer.
+- Fill the settings page itself with properly named and annotated (even if yet unconnected) controls to set mod's parameters. Use either exactly the elements found in other settings pages or use [Semantic](https://semantic-ui.com) (for now use version 2.3.1, later - guess it from the active [Gogs](https://github.com/gogits/gogs) installation itself).
 - Add general enable/disable setting, controlling if **LongHours** is to run at all and properly connect it - should be completely functional.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
