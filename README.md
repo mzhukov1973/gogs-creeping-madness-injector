@@ -123,7 +123,7 @@ Enjoy! ))
 #### [ToDo](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/2):
 - Add a quick-settings menu drop-up into the standard [Gogs](https://github.com/gogits/gogs) footer.
 - Fill the settings page itself with properly named and annotated (even if yet unconnected) controls to set mod's parameters. Use either exactly the elements found in other settings pages or use [Semantic](https://semantic-ui.com) (for now use version 2.3.1, later - guess it from the active [Gogs](https://github.com/gogits/gogs) installation itself).
-- Add a general enable/disable control to the `.../user/settings` page, to control if **LongHours** is to run at all upon injection and properly connect it to the data - it should be completely functional.
+- Add a general enable/disable control to the `.../user/settings` page, to control if **LongHours** is to run at all upon injection and properly connect it to the data - this one control should be completely functional.
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.
 - In order to avoid depending on any external framework or library as well as for general lightness of code implement two-way coupling between settings values stored in object' sproperties and controls for setting them, found on `.../user/settings` page. Do so, by creating a Proxy for the object, with handler monitoring `.set(...)` calls and informing all concerned parties of any changes via custom events.
 
