@@ -1,6 +1,6 @@
 # "LongHours" ─ Brain-teasing, Sanity-tilting, Subtle Repository Augmentation
 ### *...Gogs Creeping Madness Injector...*
-###### Version: 1.0.2
+###### Version: 1.0.2+
 ###### License: MIT
 A script, to be injected into [Gogs](https://github.com/gogits/gogs) installation ([Gogs](https://github.com/gogits/gogs) is a painless self-hosted Git service), that after a little while begins to screw with your mind. Especially effective during long hours spent in front of the computer: all-night coding sessions, work / academic emergencies, etc.. Not for the fainthearted.
 
@@ -115,8 +115,11 @@ Enjoy! ))
 - Marked settings menu entry with a small JS logo, to indicate that it's a JS injected functionality as opposed to 'native' one, written in Go.
 - Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
 
+*1.0.3(currently uncommitted):*
+- Fixed the [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected.
+
 #### ToDo:
-- Fix weird [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected.
 - Add a quick-settings menu drop-up into the standard Gogs footer.
 - Add general enable/disable setting, controlling if LongHours is to run at all.
+- Fill the settings page itself with properly named and annotated (even if yet unconnected) controls to set mod's parameters. Use either exactly the elements found in other settings pages or use Semantic (for now use version 2.3.1, later - guess it from the active Gogs installation itself).
 - Make this JS logo change appearance to further indicate injections' status (i.e. ```not present```, ```loaded```, ```active```, ```error(?)```, ```disabled```, ```waiting to go active```, ```modified settings```, ```original settings```) and add the same status as text popup, appearing on hover over the settings item.

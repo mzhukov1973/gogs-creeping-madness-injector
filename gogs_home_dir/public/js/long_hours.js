@@ -233,6 +233,8 @@ console.log(el.style.backgroundColor);
       const dfMnImg    = uiSt.dfMnObj.img
       if (!uiSt.mnObj) {
         uiSt.mnObj = uiSt.mnCloneSrc.cloneNode(true)
+        uiSt.mnObj.classList.remove('active')
+        uiSt.mnObj.style.backgroundColor   = uiSt.dfMnObj.inactBg
         uiSt.mnObj = uiSt.mnCloneSrc.parentNode.insertBefore(uiSt.mnObj, uiSt.mnCloneSrc.nextSibling)
         Object.assign(
           uiSt.mnObj, {
@@ -247,7 +249,6 @@ console.log(el.style.backgroundColor);
         uiSt.mnObj.baseURI                 = uiSt.dfMnObj.baseURI
         uiSt.mnObj.childNodes[0].nodeValue = uiSt.dfMnObj.nodeValue
         uiSt.mnObj.style.transition        = uiSt.dfMnObj.transition
-        uiSt.mnObj.style.backgroundColor   = uiSt.dfMnObj.inactBg
         uiSt.mnObj.addEventListener(                         'click',         menuObjOnClick,      {capture:false, once:false, passive:false})
       }
     }
