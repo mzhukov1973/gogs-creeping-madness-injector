@@ -116,7 +116,7 @@ Enjoy! ))
 - Fixed menu styles change semantics at the modified ```user/settings``` page for the injected content.
 
 *1.0.3(currently uncommitted):*
-- Fixed the [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected.
+- Fixed the [issue](https://github.com/mzhukov1973/gogs-creeping-madness-injector/issues/1) with **`LongHours UI mod`** menu item in `.../user/settings` being not clickable if **`SSH Keys`** item is currently selected. It [works](https://testbed2.cloud.tilaa.com:7443/user/settings/ssh).
 
 #### ToDo:
 - Add a quick-settings menu drop-up into the standard Gogs footer.
